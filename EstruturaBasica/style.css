@@ -4,10 +4,13 @@
     border: 2x  rgb(175, 14, 14);
     display: flex;
     border: solid;
+    flex-wrap: wrap;
+    
 }
 
 .item{
     background-color: burlywood;
     margin: 5px;
+    
     
 }
