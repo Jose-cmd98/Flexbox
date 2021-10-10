@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: yellowgreen;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+
+        }
+        .center {
+            align-items: center;
+        }
+        .flex{
+            flex: 1;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+    </style>
+</head>
+<body>
+    <p>Center</p>
+    <section class="container center flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3 mais algum texto aleatorio</div>
+    </section>
+    <p>Stretch</p>
+    <section class="container  stretch flex">
+        <div class="item">Item 1</div>
+        <div class="item">lorem ipsum lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+    <p>Flex-Start</p>
+    <section class="container  flex-start flex">
+        <div class="item">Item 1 </div>
+        <div class="item">Item 2 lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+    <p>flex-end</p>
+    <section class="container flex-end flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+    <p>baseline</p>
+    <section class="container baseline flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 lorem ipsum dolor sit amet</div>
+        <div class="item">Item 3</div>
+    </section>
+</body>
+</html>
