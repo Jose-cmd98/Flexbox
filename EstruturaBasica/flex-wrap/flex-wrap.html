@@ -9,9 +9,16 @@
     <style>
         .flex-container{
             display: flex;
-            height: 150px;
+            
             border: 2px solid black;
             max-width: 300px;
+        }
+
+        .flex-container-column{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+            flex-direction: column;
         }
 
         .item{
@@ -76,6 +83,35 @@
         <div class="item orange">4</div>
     </div>
 
-    <h4>Exemplos de uso Flex-wrap</h4>
+    <h4>Acima Exemplos de uso Flex-wrap flex-direction padrão, abaixo uso do column.</h4>
+    
+    <h1>No-Wrap</h1>
+
+    <div class="flex-container-column noWrap">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item grey">3</div>
+        <div class="item orange">4</div>
+    </div>
+
+    <h1>Wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item grey">3</div>
+        <div class="item orange">4</div>
+    </div>
+
+    <h1>Wrap-Reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item grey">3</div>
+        <div class="item orange">4</div>
+    </div>
+
+    <h4>Exemplos de uso Flex-wrap RowMode</h4>
 </body>
 </html>
